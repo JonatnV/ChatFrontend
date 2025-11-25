@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Chat POC</title>
+    <script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/stompjs@2.3.3/lib/stomp.min.js"></script>
+</head>
+
+<body>
+<h2>Chat POC</h2>
+
+<h3>Auth</h3>
+<input id="username" placeholder="username">
+<input id="password" type="password" placeholder="password">
+<button id="register">Registrar</button>
+<button id="login">Login</button>
+
+<h3>Room</h3>
+<input id="roomId" placeholder="roomId">
+<button id="join">Unirse</button>
+
+<h3>Enviar mensaje</h3>
+<input id="msg" placeholder="mensaje">
+<button id="send">Enviar</button>
+
+<h3>Log</h3>
+<pre id="log" style="height:300px;overflow:auto;border:1px solid #ccc"></pre>
+
+<script src="./main.js"></script>
+</body>
+</html>
